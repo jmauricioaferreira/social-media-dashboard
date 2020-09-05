@@ -1,42 +1,101 @@
 
+header {
+    height: 200px;
+    padding-top: 30px;
+    background-color: hsl(250, 100%, 98%);
+    font-weight: 700;
+    border-radius: 0 0 20px 20px;
+
+    
+}
+
 header .container {
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
-    margin-top: 20px;
+    position: ;
+
 }
 
-.visual {
+.cabecalho,
+.area-botao {
+    background-color:hsl(250, 100%, 98%);
+}
+
+header h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+
+}
+
+header p {
+    color: hsl(228, 12%, 44%);
+}
+
+
+.cabecalho {
+    padding-bottom: 20px;
+}
+
+
+.area-botao {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 20px;
+    border-top: 2px solid;
+    border-color:  hsl(228, 12%, 44%);
+    vertical-align: middle;
+    padding: 20px 0px;
 }
-
 
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 14px;
 }
 
-.container {
-    width: 94%;
-    margin: 0 auto;
+body .container {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    
 }
 
-.social-medias {
+.redes-sociais {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-content: space-around;
+    height: 100%;
+    background-color: white;
 }
 
-.informacao-medias li {
+
+
+.rede-social-box {
     display: flex;
     flex-direction: column;
-    height: 200px;
-    background-color: blueviolet;
-    margin-top: 5%;
+    height: 97%;
+    background-color: lightblue;
     justify-content: space-around;
+    border-radius: 3px;
 }
+
+.rede-social-fundo { 
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+}
+
+#instagram {
+    background: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    margin-top: 0;
+}
+
+#facebook {
+    background:hsl(208, 92%, 53%);
+}
+
 
 .attribution { 
     font-size: 11px; 
