@@ -2,7 +2,7 @@
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/social-media-dash.jpg)
 
-## Welcome! 👋
+### Welcome! 👋
 
 #### Adapted challenge from https://www.frontendmentor.io
 
