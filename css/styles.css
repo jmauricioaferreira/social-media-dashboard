@@ -5,21 +5,27 @@ header {
     background-color: hsl(250, 100%, 98%);
     font-weight: 700;
     border-radius: 0 0 20px 20px;
+    width: 100%;
 
-    
-}
-
-header .container {
     display: flex;
     flex-direction: column;
-    position: ;
-
+    align-items: center;
+}
+ 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cabecalho,
-.area-botao {
-    background-color:hsl(250, 100%, 98%);
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    width: 90%;
 }
+
 
 header h1 {
     font-size: 26px;
@@ -37,44 +43,29 @@ header p {
 }
 
 
-.area-botao {
+.button-area {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-top: 2px solid;
     border-color:  hsl(228, 12%, 44%);
     vertical-align: middle;
-    padding: 20px 0px;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-}
-
-body .container {
-    width: 90%;
-    margin: auto;
-    background-color: white;
-    
+    padding: 20px 0;
 }
 
 .redes-sociais {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-content: space-around;
-    height: 100%;
-    background-color: white;
+   
+  
 }
 
-
-
-.rede-social-box {
+.rede-social-card {
     display: flex;
     flex-direction: column;
     height: 97%;
-    background-color: lightblue;
+    background-color:hsl(227, 47%, 96%);
     justify-content: space-around;
     border-radius: 3px;
 }
@@ -87,22 +78,175 @@ body .container {
     margin-top: 30px;
 }
 
+body li:nth-child(2) strong{
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+   
+}
+
+body li:nth-child(2) {
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 44%);
+  
+
+}
+
+body li:nth-child(3) {
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+
+}
+  
+body a {
+    text-decoration: none;
+}
+
 #instagram {
     background: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-    margin-top: 0;
+    margin-top: -60px;
 }
 
-#facebook {
-    background:hsl(208, 92%, 53%);
+#twitter {
+    background:  hsl(203, 89%, 53%)
 }
 
+#linkedin {
+    background:#0072b1;
+}
+
+#github {
+    background: #6f42c1;
+}
+
+.rede-social-fundo a {
+   display: flex;
+   vertical-align: middle;
+   justify-content: center;
+}
+.rede-social-fundo a span {
+    padding-left: 5px;
+ }
+
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
 .attribution { 
     font-size: 11px; 
     text-align: center;
-    
+    display: flex; 
+    justify-content: center;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/* Toggle Switch button */
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+@media screen and (min-width: 700px) {
+
+    body {
+        max-width: 940px;
+        margin: auto ;
+       
+    }
+    
+    .rede-social-fundo {
+        width: 48%;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+    #instagram {
+        margin: 0;
+    }
+
+    .redes-sociais {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: -60px;
+        justify-content: space-between;
+
+        height: 500px;
+    }
+
+    .rede-social-card {
+        width: 100%;
+        margin-bottom: 0px;
+        display: flex;
+    }  
+
+}
+
