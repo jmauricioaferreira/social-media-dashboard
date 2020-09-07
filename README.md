@@ -6,7 +6,8 @@
 
 #### Adapted challenge from https://www.frontendmentor.io
 
-**[SEE HERE](https://github.io/jmauricioaferreira/social-media-dashboard/)**
+**[SEE HERE](https://jmauricioaferreira.github.io/social-media-dashboard/)**
+
 
 
 
